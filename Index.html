@@ -1,19 +1,14 @@
 <html>
   <head>
     <title>.::Bienvenidos::.</title>
-    <link rel="stylesheet" href="css/miestilo.css">
-    <style>
-       h1{color: Red; text-decoration: underline;}
-       div{ width: 400px; background: brown;}
-       .TextoEnDiv{color: white}
-    </style>
+     <link href="bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet"  />
   </head>
   <body>
-    <!-- Aplicación en linea de css -->
-    <h1 style = "color: blue; font-size: 18px;">Introducción</h1>
+    <div class="container">
+     <h1>Introducción <small>Desarrollo web</small></h1>
     <h2>Primer tema</h2>
     <div>
-       <p class="TextoEnDiv">
+       <p>
          Este es un párrafo de ejemplo, espero que todo haya salido bien (y)
        </p>
        <p>
@@ -22,5 +17,30 @@
        </p>
     </div>
     <h2>Segundo tema</h2>
+
+       <div class="row">
+          <div class="col-md-4">
+             <img src="img/1.jpg" class="img-rounded">
+             <div class="caption">
+                <h2>Conferencia</h2>
+                <p>Conferencia de desarrollo de aplicaciones Windows 8.</p>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <img src="img/2.jpg" class="img-rounded">
+             <div class="caption">
+                <h2>Paleta Fronton</h2>
+                <p>Entrenamiento de paleta frontón en el complejo Rosa Toro.</p>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <img src="img/3.jpg" class="img-rounded">
+             <div class="caption">
+                <h2>Paracaidismo</h2>
+                <p>Practica de salto de paracaidas en la escuela de paracaidistas del ejercito.</p>
+             </div>
+          </div>
+       </div>
+    </div>
   </body>
 </html>
